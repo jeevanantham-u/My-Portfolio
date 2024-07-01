@@ -86,6 +86,16 @@ textarea {
     letter-spacing: 1px;
 }
 
+.header__main{
+    display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .header__main-ham-menu-cont {
+        display:block
+    }
+}
+
 
 .header__links {
     display: flex;
@@ -108,9 +118,18 @@ textarea {
 
 
 
-.header__sm-menu, .header__main-ham-menu-count{
-    display: none;
+.header__sm-menu--active {
+    visibility: hidden;
+    opacity: 0
 }
+
+@media only screen and (max-width: 37.5em) {
+    .header__sm-menu--active {
+        visibility:visible;
+        opacity: 1
+    }
+}
+
 
 .home-hero {
     color: #fff;
